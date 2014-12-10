@@ -1,0 +1,22 @@
+{
+  "name": "CaesarNodeJS",
+  "version": "1.0.0",
+  "description": "CeasarNodeJS ============",
+  "main": "caesar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MehdiChouag/CeasarNodeJS.git"
+  },
+  "keywords": [
+    "Caesar"
+  ],
+  "author": "Mehdi Chouag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MehdiChouag/CeasarNodeJS/issues"
+  },
+  "homepage": "https://github.com/MehdiChouag/CeasarNodeJS"
+}
