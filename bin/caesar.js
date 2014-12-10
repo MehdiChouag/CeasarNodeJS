@@ -4,26 +4,25 @@ var program = require('commander');
 
 program
   .usage("[option] <file...>")
-  .option("-d <n> <items>");
+  .option("-d <n>", "[number] [string...]")
+  .parse(process.argv);
 
-program.on("-d", function (number, string){
-	console.log(number);
-	console.log(string);
-  	var display = [];
-	if (number && string) {
-		for (var i = 0; i <= string.length - 1; i++) {
-			display.push(CaesarCrypto(number, string[i]));
+program
+	.on("-d", function (number){
+	  	var display = [];
+	  	var string = program.args;
+		if (number && program.args.length >= 1) {
+			for (var i = 0; i <= string.length - 1; i++) {
+				display.push(CaesarCrypto(number, string[i]));
+			}
+			display.forEach(function (str){
+				console.log(str);
+			});
 		}
-		display.forEach(function (str){
-			console.log(str);
-		});
-	}
-	else if (process.argv.length < 3)
-		console.log ("Usage : bin/caesar.js -d [number] [string...]");
-});
-
-program.parse(process.argv);
-
+		else
+			console.log ("Usage : bin/caesar.js -d [number] [string...]");
+	})
+	.parse(process.argv);
 
 
 function CaesarCrypto(number, string){
