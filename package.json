@@ -2,7 +2,7 @@
   "name": "CaesarNodeJS",
   "version": "1.0.0",
   "description": "CeasarNodeJS ============",
-  "main": "caesar.js",
+  "main": "bin/caesar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/MehdiChouag/CeasarNodeJS/issues"
   },
-  "homepage": "https://github.com/MehdiChouag/CeasarNodeJS"
+  "homepage": "https://github.com/MehdiChouag/CeasarNodeJS",
+  "dependencies": {
+    "commander": "^2.5.0"
+  }
 }

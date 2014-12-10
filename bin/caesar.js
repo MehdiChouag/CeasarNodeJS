@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 
+/* Require on commander */
+
 var program = require('commander');
 
+/* Setting commander and the options */
 program
   .usage("[option] <file...>")
   .option("-d <n>", "[number] [string...]")
   .parse(process.argv);
 
+/* handle the -d option and check if the argument is valid and is the string to encode exist */
 program
 	.on("-d", function (number){
 	  	var display = [];
@@ -24,6 +28,9 @@ program
 	})
 	.parse(process.argv);
 
+
+/* This function return the string encode or an error and takes 
+an argument the number for the shift and the string to encode */ 
 
 function CaesarCrypto(number, string){
 	if (isNaN(number)){
