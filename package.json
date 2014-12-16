@@ -1,7 +1,7 @@
 {
-  "name": "CaesarNodeJS",
+  "name": "caesar-cipher-mehdi",
   "version": "1.0.0",
-  "description": "CeasarNodeJS ============",
+  "description": "Ceasar encrypt",
   "main": "bin/caesar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/MehdiChouag/CeasarNodeJS",
   "dependencies": {
-    "commander": "^2.5.0"
+    "commander": "^2.5.0",
+    "sinon": "^1.12.1"
   }
 }
